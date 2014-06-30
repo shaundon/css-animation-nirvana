@@ -1,0 +1,187 @@
+/* Flick rotate. Rotates 180 degrees with a bounce. 
+*/
+@-moz-keyframes flick-rotate {
+  0% { -moz-transform: rotate(0deg); }
+  10% { -moz-transform: rotate(190deg); }
+  20% { -moz-transform: rotate(180deg); }
+  30% { -moz-transform: rotate(185deg); }
+  50% { -moz-transform: rotate(180deg); }
+  60% { -moz-transform: rotate(370deg); }
+  70% { -moz-transform: rotate(360deg); }
+  80% { -moz-transform: rotate(365deg); }
+  100% { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes flick-rotate {
+  0% { -o-transform: rotate(0deg); }
+  10% { -o-transform: rotate(190deg); }
+  20% { -o-transform: rotate(180deg); }
+  30% { -o-transform: rotate(185deg); }
+  50% { -o-transform: rotate(180deg); }
+  60% { -o-transform: rotate(370deg); }
+  70% { -o-transform: rotate(360deg); }
+  80% { -o-transform: rotate(365deg); }
+  100% { -o-transform: rotate(360deg); }
+}
+
+@-ms-keyframes flick-rotate {
+  0% { -ms-transform: rotate(0deg); }
+  10% { -ms-transform: rotate(190deg); }
+  20% { -ms-transform: rotate(180deg); }
+  30% { -ms-transform: rotate(185deg); }
+  50% { -ms-transform: rotate(180deg); }
+  60% { -ms-transform: rotate(370deg); }
+  70% { -ms-transform: rotate(360deg); }
+  80% { -ms-transform: rotate(365deg); }
+  100% { -ms-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes flick-rotate {
+  0% { -webkit-transform: rotate(0deg); }
+  10% { -webkit-transform: rotate(190deg); }
+  20% { -webkit-transform: rotate(180deg); }
+  30% { -webkit-transform: rotate(185deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  60% { -webkit-transform: rotate(370deg); }
+  70% { -webkit-transform: rotate(360deg); }
+  80% { -webkit-transform: rotate(365deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes flick-rotate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(190deg); }
+  20% { transform: rotate(180deg); }
+  30% { transform: rotate(185deg); }
+  50% { transform: rotate(180deg); }
+  60% { transform: rotate(370deg); }
+  70% { transform: rotate(360deg); }
+  80% { transform: rotate(365deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Constant rotation. */
+@-webkit-keyframes rotation {
+    from	{ -webkit-transform: rotate(0) }
+    to	{ -webkit-transform: rotate(359deg) }
+}
+@-moz-keyframes rotation {
+    from	{ -moz-transform: rotate(0) }
+    to	{ -moz-transform: rotate(359deg) }
+}
+@-ms-keyframes rotation {
+    from	{ -ms-transform: rotate(0) }
+    to	{ -ms-transform: rotate(359deg) }
+}
+@-o-keyframes rotation {
+    from	{ -o-transform: rotate(0) }
+    to	{ -o-transform: rotate(359deg) }
+}
+
+@keyframes rotation {
+    from	{ transform: rotate(0) }
+    to	{ transform: rotate(359deg) }
+}
+
+/* Blink. Functions exactly like a <blink> element. Please never use this. */
+/* Blink */
+
+@-webkit-keyframes blink {
+  0%	{ opacity: 1; }
+  50%	{ opacity: 0; }
+  100%	{ opacity: 1; }
+}
+@-moz-keyframes blink {
+  0%	{ opacity: 1; }
+  50%	{ opacity: 0; }
+  100%	{ opacity: 1; }
+}
+@-ms-keyframes blink {
+    0%	{ opacity: 1; }
+    50%	{ opacity: 0; }
+    100%	{ opacity: 1; }
+  }
+@-o-keyframes blink {
+     0%	{ opacity: 1; }
+     50%	{ opacity: 0; }
+     100%	{ opacity: 1; }
+}
+@keyframes blink {
+  0%	{ opacity: 1; }
+  50%	{ opacity: 0; }
+  100%	{ opacity: 1; }
+}
+
+/* Pulse. Adds a pulsing glow. */
+@-webkit-keyframes pulse {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(#c00, 1);
+    }
+}
+@-moz-keyframes pulse {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(#c00, 1);
+    }
+}
+@-o-keyframes pulse {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(#c00, 1);
+    }
+}
+@-ms-keyframes pulse {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(#c00, 1);
+    }
+}
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(#c00, 1);
+    }
+}
+
+/* Swing like a pendulum. */
+@-webkit-keyframes pendulum {
+    0%, 100% { -webkit-transform: rotate(-5deg); }
+    10%, 90% { -webkit-transform: rotate(0deg); }
+    40%, 60% { -webkit-transform: rotate(90deg) }
+    50% { -webkit-transform: rotate(95deg); }
+}
+@-moz-keyframes pendulum {
+    0%, 100% { -moz-transform: rotate(-5deg); }
+    10%, 90% { -moz-transform: rotate(0deg); }
+    40%, 60% { -moz-transform: rotate(90deg) }
+    50% { -moz-transform: rotate(95deg); }
+}
+@-o-keyframes pendulum {
+    0%, 100% { -o-transform: rotate(-5deg); }
+    10%, 90% { -o-transform: rotate(0deg); }
+    40%, 60% { -o-transform: rotate(90deg) }
+    50% { -o-transform: rotate(95deg); }
+}
+@-ms-keyframes pendulum {
+    0%, 100% { -ms-transform: rotate(-5deg); }
+    10%, 90% { -ms-transform: rotate(0deg); }
+    40%, 60% { -ms-transform: rotate(90deg) }
+    50% { -ms-transform: rotate(95deg); }
+}
+@keyframes pendulum {
+    0%, 100% { transform: rotate(-5deg); }
+    10%, 90% { transform: rotate(0deg); }
+    40%, 60% { transform: rotate(90deg) }
+    50% { transform: rotate(95deg); }
+}

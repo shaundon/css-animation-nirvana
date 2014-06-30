@@ -1,0 +1,86 @@
+/* Fade in/out animation. */
+.animate-fade {
+  opacity: 1;
+  @include transitionEl((opacity 0.1s linear));
+
+  &.ng-hide {
+    opacity: 0;
+  }
+
+  &.ng-hide-add,
+  &.ng-hide-remove {
+    display: block !important;
+  }
+}
+
+/* Window blind effect (for ng-show / ng-hide).
+Elements using this animation must have
+a max-height property set.
+*/
+.animate-height-ngshow {
+  max-height: 500px;
+  overflow: hidden;
+  @include transitionEl((max-height 0.2s linear));
+
+  &.ng-hide {
+    max-height: 0;
+  }
+
+  &.ng-hide-add,
+  &.ng-hide-remove {
+    display: block !important;
+  }
+}
+
+/* Window blind effect (for ng-repeat).
+Elements using this animation must have
+a max-height property set.
+*/
+.animate-height {
+    max-height: auto;
+    @include transitionEl((0.25s linear max-height));
+
+    &.ng-enter {
+      max-height: 0;
+
+      &.ng-enter-active {
+        max-height: auto;
+      }
+    }
+
+    &.ng-leave {
+      max-height: auto;
+
+      &.ng-leave-active {
+        max-height: 0;
+      }
+    }
+  }
+
+/* Scale effect with bounce. For ng-repeat. */
+  .animate-repeat-scale {
+
+  &.ng-enter,
+  &.ng-leave,
+  &.ng-move {
+    position:relative;
+  }
+
+  &.ng-enter {
+    @include genericVendorPrefixes(transform, scale(0));
+    @include transitionEl((0.3s $transition-easeOutBack all));
+
+    &.ng-enter-active {
+      @include genericVendorPrefixes(transform, scale(1));
+    }
+  }
+
+  &.ng-leave {
+    @include genericVendorPrefixes(transform, scale(1));
+
+    &.ng-leave-active {
+      @include genericVendorPrefixes(transform, scale(0));
+    }
+  }
+
+}
